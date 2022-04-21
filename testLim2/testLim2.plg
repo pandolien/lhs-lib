@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: testLim2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\hsLEE\AppData\Local\Temp\RSP1CC3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/testLim2.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\cpp\lib\uOutlier.cpp"
+]
+Creating command line "cl.exe @C:\Users\hsLEE\AppData\Local\Temp\RSP1CC3.tmp" 
+Creating temporary file "C:\Users\hsLEE\AppData\Local\Temp\RSP1CC4.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/testLim2.pdb" /debug /machine:I386 /out:"Debug/testLim2.exe" /pdbtype:sept 
+.\Debug\CGraph3Dw.obj
+.\Debug\Graph3Dw.obj
+.\Debug\lkMeanClustering.obj
+.\Debug\lLodeD.obj
+.\Debug\lPRTList.obj
+.\Debug\lString.obj
+.\Debug\lToken.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\testLim2.obj
+.\Debug\testLim2Doc.obj
+.\Debug\testLim2View.obj
+.\Debug\uMatrix.obj
+.\Debug\uOutlier.obj
+.\Debug\testLim2.res
+..\lib2\Graph3D.dll\Graph3D.lib
+]
+Creating command line "link.exe @C:\Users\hsLEE\AppData\Local\Temp\RSP1CC4.tmp"
+<h3>Output Window</h3>
+Compiling...
+uOutlier.cpp
+E:\cpp\lib\uOutlier.cpp(73) : warning C4101: 'j' : unreferenced local variable
+Linking...
+
+
+
+<h3>Results</h3>
+testLim2.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
