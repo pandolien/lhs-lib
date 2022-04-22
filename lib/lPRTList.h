@@ -30,6 +30,7 @@ public:
 	void DeleteHead();
 	void DeleteHead2();
 	void DeleteNum(int n);
+	void Change(int n1,int n2);
 public:
 	int Getsize();
 };

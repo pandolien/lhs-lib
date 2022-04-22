@@ -172,3 +172,14 @@ void lPRTList::DeleteHead2(){
 int lPRTList::Getsize(){
 	return n;
 }
+void lPRTList::Change(int n1,int n2){
+	LNode *A,*B;
+	void *Tep;
+	Search(n1);
+	A = nFind;
+	Search(n2);
+	B = nFind;
+	Tep = A->D;
+	A->D = B->D;
+	B->D = Tep;
+}

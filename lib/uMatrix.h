@@ -36,6 +36,8 @@ public:
 	uMatrix operator +(uMatrix &other);
 	uMatrix operator -(uMatrix &other);
 	uMatrix outer(uMatrix &A,uMatrix &B);
+	void DIN(int,int,float);
+	float DOUT(int,int);
 public:
 	BOOL isTemp(){return temp;}
 	void NoTemp(){temp = FALSE;}

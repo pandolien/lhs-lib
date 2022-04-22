@@ -432,3 +432,9 @@ BOOL uMatrix::SizeConfirm(){
 	if(C == 0||R == 0) return TRUE;
 	return FALSE;
 }
+void uMatrix::DIN(int i,int j,float Dt){
+	D[i*C+j] = Dt;
+}
+float uMatrix::DOUT(int i,int j){
+	return D[i*C+j];
+}
