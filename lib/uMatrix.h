@@ -27,15 +27,16 @@ public://temp code;
 	void Init(int,int);
 	void RemoveAll();
 public:
-	void operator =(uMatrix &other);
-	uMatrix operator *(uMatrix &other);
-	uMatrix operator *(int other);
-	uMatrix operator *(float other);
-	uMatrix operator /(int other);
-	uMatrix operator /(float other);
-	uMatrix operator +(uMatrix &other);
-	uMatrix operator -(uMatrix &other);
+	virtual void operator =(uMatrix &other);
+	virtual uMatrix operator *(uMatrix &other);
+	virtual uMatrix operator *(int other);
+	virtual uMatrix operator *(float other);
+	virtual uMatrix operator /(int other);
+	virtual uMatrix operator /(float other);
+	virtual uMatrix operator +(uMatrix &other);
+	virtual uMatrix operator -(uMatrix &other);
 	uMatrix outer(uMatrix &A,uMatrix &B);
+	void sq(int);
 	void DIN(int,int,float);
 	float DOUT(int,int);
 public:

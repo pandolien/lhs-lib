@@ -438,3 +438,9 @@ void uMatrix::DIN(int i,int j,float Dt){
 float uMatrix::DOUT(int i,int j){
 	return D[i*C+j];
 }
+void uMatrix::sq(int n){
+	int i;
+	for(i = 0;i<R*C;i++){
+		D[i] = pow(D[i],n);
+	}
+}

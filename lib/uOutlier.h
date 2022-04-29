@@ -5,6 +5,7 @@
 #define _UOU_H_
 #include "lLodeD.h"
 #include "lPRTList.h"
+#include "lDR.h"
 #include "uMatrix.h"
 
 class uOutlier  
@@ -13,23 +14,17 @@ public:
 	uOutlier();
 	virtual ~uOutlier();
 public:
-	lPRTList d_Rode;
-	lPRTList d_PAA;
-	lPRTList d_Mean;
+	lPRTList dData;
+	lPRTList dPaa;
 public:
 	void Init();
-	int GetSize();
-	uMatrix operator [](int n);
 	void RemoveAll();
+	void RemoveList(lPRTList &);
+	int GetSize();
 public:
 	uMatrix PAA(uMatrix *Dt,int n);
-	uMatrix PAAReturn(int n);
-	void PAAALL();
-	void PAASAVE();
-	void ALLMean();
-	void MeanSave();
-	uMatrix PAAslide(int,int);
-	void PAAALL2();
+	void PAA_ALL();
+	void PaaSave();
 };
 
 #endif // !defined(AFX_UOUTLIER_H__E2FFC2C6_909D_41A3_A6AF_F5951BFD18E8__INCLUDED_)
